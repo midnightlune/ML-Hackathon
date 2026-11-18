@@ -1,0 +1,16 @@
+{
+  "selected": "LightGBM",
+  "rule": "max CV observation Top-1 (GroupKFold 5 by trip); CV log loss breaks ties within 0.001",
+  "cv_top1": 0.8236519745073083,
+  "baseline_nearest_arc": {
+    "Model": "Baseline: nearest arc (not a model)",
+    "Algorithm Family": "Heuristic",
+    "Key Configuration": "argmin perp_dist",
+    "cv_top1": 0.5114666907964851,
+    "st_top1": 0.49334259580872986,
+    "st_top1_sub20": 0.4855240301100174
+  },
+  "xgb_device": "cuda",
+  "seed": 42,
+  "total_runtime_s": 215.59003973007202
+}

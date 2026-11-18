@@ -1,0 +1,86 @@
+train: lattices ready in 10s (max per trip 3.6s)
+student_test: lattices ready in 1s (max per trip 0.7s)
+C:\Users\Sarah\Downloads\ML\hack\.venv\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+C:\Users\Sarah\Downloads\ML\hack\.venv\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+C:\Users\Sarah\Downloads\ML\hack\.venv\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+C:\Users\Sarah\Downloads\ML\hack\.venv\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+C:\Users\Sarah\Downloads\ML\hack\.venv\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+LightGBM: OOF + student_test scores in 101s
+C:\Users\Sarah\Downloads\ML\hack\.venv\Lib\site-packages\xgboost\core.py:569: UserWarning: [13:00:33] WARNING: C:\actions-runner\_work\xgboost\xgboost\src\common\error_msg.cc:62: Falling back to prediction using DMatrix due to mismatched devices. This might lead to higher memory usage and slower performance. XGBoost is running on: cuda:0, while the input data is on: cpu.
+Potential solutions:
+- Use a data structure that matches the device ordinal in the booster.
+- Set the device for booster before call to inplace_predict.
+
+This warning will only be shown once.
+
+  return func(**kwargs)
+XGBoost: OOF + student_test scores in 23s
+[I 2026-11-18 13:00:56,189] A new study created in memory with name: no-name-d2fdfbc2-f5ea-482f-b292-eabe7e9e936a
+  hmm trial 0: {'tau': 1.0, 'beta': 10.0, 'v_max': 60.0} -> train HMM top1 0.9264 [145s]
+[I 2026-11-18 13:01:00,278] Trial 0 finished with value: 0.9264034529507789 and parameters: {'tau': 1.0, 'beta': 10.0, 'v_max': 60.0}. Best is trial 0 with value: 0.9264034529507789.
+  hmm trial 1: {'tau': 0.7106591851092233, 'beta': 79.69454818643933, 'v_max': 63.919636508684306} -> train HMM top1 0.9254 [149s]
+[I 2026-11-18 13:01:04,008] Trial 1 finished with value: 0.9254184766068119 and parameters: {'tau': 0.7106591851092233, 'beta': 79.69454818643933, 'v_max': 63.919636508684306}. Best is trial 0 with value: 0.9264034529507789.
+  hmm trial 2: {'tau': 1.1906379991333114, 'beta': 2.05133826308745, 'v_max': 29.35967122017216} -> train HMM top1 0.8420 [152s]
+[I 2026-11-18 13:01:07,771] Trial 2 finished with value: 0.8419776996928866 and parameters: {'tau': 1.1906379991333114, 'beta': 2.05133826308745, 'v_max': 29.35967122017216}. Best is trial 0 with value: 0.9264034529507789.
+  hmm trial 3: {'tau': 0.34292951628939655, 'beta': 53.99484409787433, 'v_max': 56.06690070459253} -> train HMM top1 0.9249 [156s]
+[I 2026-11-18 13:01:11,495] Trial 3 finished with value: 0.92490938770993 and parameters: {'tau': 0.34292951628939655, 'beta': 53.99484409787433, 'v_max': 56.06690070459253}. Best is trial 0 with value: 0.9264034529507789.
+  hmm trial 4: {'tau': 1.5317709628184266, 'beta': 1.0994335574766196, 'v_max': 78.19459112971967} -> train HMM top1 0.9178 [160s]
+[I 2026-11-18 13:01:15,292] Trial 4 finished with value: 0.917765542428686 and parameters: {'tau': 1.5317709628184266, 'beta': 1.0994335574766196, 'v_max': 78.19459112971967}. Best is trial 0 with value: 0.9264034529507789.
+  hmm trial 5: {'tau': 2.0396887264773382, 'beta': 2.65875439832727, 'v_max': 30.909498032426036} -> train HMM top1 0.8544 [164s]
+[I 2026-11-18 13:01:18,970] Trial 5 finished with value: 0.8544393105165592 and parameters: {'tau': 2.0396887264773382, 'beta': 2.65875439832727, 'v_max': 30.909498032426036}. Best is trial 0 with value: 0.9264034529507789.
+  hmm trial 6: {'tau': 0.4576418837415782, 'beta': 4.059611610484305, 'v_max': 51.48538589793427} -> train HMM top1 0.9235 [167s]
+[I 2026-11-18 13:01:22,837] Trial 6 finished with value: 0.9235204603934372 and parameters: {'tau': 0.4576418837415782, 'beta': 4.059611610484305, 'v_max': 51.48538589793427}. Best is trial 0 with value: 0.9264034529507789.
+  hmm trial 7: {'tau': 0.8110848199986003, 'beta': 3.8234752246751853, 'v_max': 56.71117368334277} -> train HMM top1 0.9274 [171s]
+[I 2026-11-18 13:01:26,827] Trial 7 finished with value: 0.9274050300196441 and parameters: {'tau': 0.8110848199986003, 'beta': 3.8234752246751853, 'v_max': 56.71117368334277}. Best is trial 7 with value: 0.9274050300196441.
+  hmm trial 8: {'tau': 0.41363293858061295, 'beta': 3.839629299804171, 'v_max': 41.9817105976215} -> train HMM top1 0.9127 [175s]
+[I 2026-11-18 13:01:30,877] Trial 8 finished with value: 0.9126635863099355 and parameters: {'tau': 0.41363293858061295, 'beta': 3.839629299804171, 'v_max': 41.9817105976215}. Best is trial 7 with value: 0.9274050300196441.
+  hmm trial 9: {'tau': 0.8574153197420806, 'beta': 37.18364180573209, 'v_max': 31.980426929501583} -> train HMM top1 0.8685 [179s]
+[I 2026-11-18 13:01:34,714] Trial 9 finished with value: 0.8684503223307418 and parameters: {'tau': 0.8574153197420806, 'beta': 37.18364180573209, 'v_max': 31.980426929501583}. Best is trial 7 with value: 0.9274050300196441.
+  hmm trial 10: {'tau': 2.48454770496437, 'beta': 12.026486375391425, 'v_max': 66.46675662346213} -> train HMM top1 0.9281 [183s]
+[I 2026-11-18 13:01:38,441] Trial 10 finished with value: 0.9280911933154414 and parameters: {'tau': 2.48454770496437, 'beta': 12.026486375391425, 'v_max': 66.46675662346213}. Best is trial 10 with value: 0.9280911933154414.
+  hmm trial 11: {'tau': 2.2148990704857683, 'beta': 11.920752862585243, 'v_max': 60.85589888325843} -> train HMM top1 0.9265 [187s]
+[I 2026-11-18 13:01:42,143] Trial 11 finished with value: 0.9264532551254738 and parameters: {'tau': 2.2148990704857683, 'beta': 11.920752862585243, 'v_max': 60.85589888325843}. Best is trial 10 with value: 0.9280911933154414.
+  hmm trial 12: {'tau': 2.838223899154036, 'beta': 5.893307326777582, 'v_max': 74.68523727031142} -> train HMM top1 0.9273 [190s]
+[I 2026-11-18 13:01:45,848] Trial 12 finished with value: 0.9273330935450848 and parameters: {'tau': 2.838223899154036, 'beta': 5.893307326777582, 'v_max': 74.68523727031142}. Best is trial 10 with value: 0.9280911933154414.
+  hmm trial 13: {'tau': 1.7175134710425566, 'beta': 18.378924518764467, 'v_max': 45.70534130679701} -> train HMM top1 0.9193 [194s]
+[I 2026-11-18 13:01:49,585] Trial 13 finished with value: 0.9192706748194671 and parameters: {'tau': 1.7175134710425566, 'beta': 18.378924518764467, 'v_max': 45.70534130679701}. Best is trial 10 with value: 0.9280911933154414.
+  hmm trial 14: {'tau': 0.48879852631307763, 'beta': 10.17194610772141, 'v_max': 65.59183615128732} -> train HMM top1 0.9264 [198s]
+[I 2026-11-18 13:01:53,310] Trial 14 finished with value: 0.9263923858008466 and parameters: {'tau': 0.48879852631307763, 'beta': 10.17194610772141, 'v_max': 65.59183615128732}. Best is trial 10 with value: 0.9280911933154414.
+  hmm trial 15: {'tau': 1.2579274725447662, 'beta': 1.977026528396972, 'v_max': 48.24255431240003} -> train HMM top1 0.9184 [202s]
+[I 2026-11-18 13:01:57,146] Trial 15 finished with value: 0.918440638574551 and parameters: {'tau': 1.2579274725447662, 'beta': 1.977026528396972, 'v_max': 48.24255431240003}. Best is trial 10 with value: 0.9280911933154414.
+  hmm trial 16: {'tau': 1.12413877986769, 'beta': 1.8879530824498487, 'v_max': 66.50664366280245} -> train HMM top1 0.9257 [206s]
+[I 2026-11-18 13:02:01,323] Trial 16 finished with value: 0.9257117560800155 and parameters: {'tau': 1.12413877986769, 'beta': 1.8879530824498487, 'v_max': 66.50664366280245}. Best is trial 10 with value: 0.9280911933154414.
+  hmm trial 17: {'tau': 1.3797030514084765, 'beta': 22.8154837274139, 'v_max': 75.03284180653964} -> train HMM top1 0.9283 [210s]
+[I 2026-11-18 13:02:05,010] Trial 17 finished with value: 0.9283014691641535 and parameters: {'tau': 1.3797030514084765, 'beta': 22.8154837274139, 'v_max': 75.03284180653964}. Best is trial 17 with value: 0.9283014691641535.
+  hmm trial 18: {'tau': 1.2116285090451557, 'beta': 37.13904445571687, 'v_max': 77.50852862767644} -> train HMM top1 0.9267 [214s]
+[I 2026-11-18 13:02:09,343] Trial 18 finished with value: 0.9267133331488808 and parameters: {'tau': 1.2116285090451557, 'beta': 37.13904445571687, 'v_max': 77.50852862767644}. Best is trial 17 with value: 0.9283014691641535.
+  hmm trial 19: {'tau': 1.8576547804319188, 'beta': 30.780592917856495, 'v_max': 71.62980626782823} -> train HMM top1 0.9279 [222s]
+[I 2026-11-18 13:02:17,766] Trial 19 finished with value: 0.9279362532163904 and parameters: {'tau': 1.8576547804319188, 'beta': 30.780592917856495, 'v_max': 71.62980626782823}. Best is trial 17 with value: 0.9283014691641535.
+  hmm trial 20: {'tau': 0.7708287784358941, 'beta': 20.227828761485174, 'v_max': 79.90510125134016} -> train HMM top1 0.9269 [227s]
+[I 2026-11-18 13:02:22,010] Trial 20 finished with value: 0.9268904075477963 and parameters: {'tau': 0.7708287784358941, 'beta': 20.227828761485174, 'v_max': 79.90510125134016}. Best is trial 17 with value: 0.9283014691641535.
+  hmm trial 21: {'tau': 2.14793485429021, 'beta': 34.9404333081963, 'v_max': 67.3686239791679} -> train HMM top1 0.9274 [237s]
+[I 2026-11-18 13:02:31,951] Trial 21 finished with value: 0.9274105635946103 and parameters: {'tau': 2.14793485429021, 'beta': 34.9404333081963, 'v_max': 67.3686239791679}. Best is trial 17 with value: 0.9283014691641535.
+  hmm trial 22: {'tau': 1.4255255627841488, 'beta': 18.000554787310758, 'v_max': 73.26677255237165} -> train HMM top1 0.9278 [252s]
+[I 2026-11-18 13:02:47,115] Trial 22 finished with value: 0.9278477160169327 and parameters: {'tau': 1.4255255627841488, 'beta': 18.000554787310758, 'v_max': 73.26677255237165}. Best is trial 17 with value: 0.9283014691641535.
+  hmm trial 23: {'tau': 1.5771237124854611, 'beta': 7.936892523629795, 'v_max': 50.449319693780225} -> train HMM top1 0.9229 [266s]
+[I 2026-11-18 13:03:01,567] Trial 23 finished with value: 0.9228619649724704 and parameters: {'tau': 1.5771237124854611, 'beta': 7.936892523629795, 'v_max': 50.449319693780225}. Best is trial 17 with value: 0.9283014691641535.
+  hmm trial 24: {'tau': 1.2083831515832766, 'beta': 49.34804180657439, 'v_max': 56.63701818658584} -> train HMM top1 0.9260 [280s]
+[I 2026-11-18 13:03:15,777] Trial 24 finished with value: 0.9259995019782531 and parameters: {'tau': 1.2083831515832766, 'beta': 49.34804180657439, 'v_max': 56.63701818658584}. Best is trial 17 with value: 0.9283014691641535.
+   model                              evaluated_on  clf_top1_eligible  clf_top1_all  clf_continuity  clf_route_precision_mean  clf_route_recall_mean  clf_route_f1_mean  hmm_top1_eligible  hmm_top1_all  hmm_continuity  hmm_route_precision_mean  hmm_route_recall_mean  hmm_route_f1_mean  breaks  decode_s_mean_per_trip
+LightGBM train (OOF emissions; decoder tuned here)             0.9143        0.8086          0.7690                    0.9103                 0.8932             0.8991             0.9283        0.8211          0.8871                    0.9562                 0.9016             0.9260     535                  0.1689
+LightGBM                              student_test             0.8944        0.7954          0.7915                    0.9238                 0.8981             0.9091             0.9021        0.8055          0.8984                    0.9647                 0.9049             0.9321       7                  0.0522
+ XGBoost train (OOF emissions; decoder tuned here)             0.9131        0.8069          0.7685                    0.9079                 0.8934             0.8979             0.9292        0.8221          0.8877                    0.9571                 0.9025             0.9269     535                  0.0461
+ XGBoost                              student_test             0.8984        0.7986          0.7960                    0.9220                 0.8978             0.9081             0.9060        0.8088          0.8995                    0.9665                 0.9042             0.9326       7                  0.0319
+selected: XGBoost | params {'tau': 1.3797030514084765, 'beta': 22.8154837274139, 'v_max': 75.03284180653964, 'gap_threshold_s': 30.0, 'subgraph_m': 400.0, 'cutoff_m': 2000.0, 'back_eps_m': 15.0, 'tuned_on': 'train trips only (LightGBM out-of-fold emissions)', 'trials': 25, 'best_train_hmm_top1': 0.9283014691641535}
+partition  trip_id  clf_top1_eligible  hmm_top1_eligible  breaks
+    train 00000079              0.961              0.837       2
+    train 00000082              0.884              0.808       1
+    train 00000083              0.922              0.873       1
+    train 00000075              0.849              0.829       2
+    train 00000057              0.915              0.896       0
+total 300s

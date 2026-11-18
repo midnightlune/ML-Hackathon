@@ -1,0 +1,9 @@
+{
+  "rule": "Phase 3 contenders within 0.005 CV Top-1 -> choose by train (out-of-fold) Top-1 after HMM",
+  "deviation": "RandomForest not decoded (time); decoder params tuned on LightGBM OOF and shared with XGBoost",
+  "train_hmm_top1": {
+    "LightGBM": 0.9283,
+    "XGBoost": 0.92925
+  },
+  "selected": "XGBoost"
+}

@@ -1,0 +1,12 @@
+{
+  "tau": 1.3797030514084765,
+  "beta": 22.8154837274139,
+  "v_max": 75.03284180653964,
+  "gap_threshold_s": 30.0,
+  "subgraph_m": 400.0,
+  "cutoff_m": 2000.0,
+  "back_eps_m": 15.0,
+  "tuned_on": "train trips only (LightGBM out-of-fold emissions)",
+  "trials": 25,
+  "best_train_hmm_top1": 0.9283014691641535
+}

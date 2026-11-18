@@ -1,0 +1,16 @@
+{
+    "best_cv_top1": 0.823504655967487,
+    "best_params": {
+        "n_estimators": 450,
+        "learning_rate": 0.09420019019055931,
+        "max_depth": 9,
+        "min_child_weight": 4,
+        "subsample": 0.7325679962310974,
+        "colsample_bytree": 0.7759870045430349,
+        "gamma": 1.0221265332484575,
+        "reg_lambda": 5.852327731091001
+    },
+    "device": "cpu",
+    "seed": 42,
+    "trials": 20
+}

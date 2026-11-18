@@ -1,0 +1,8 @@
+{
+  "primary": "CV observation Top-1 on eligible train points (GroupKFold(5) by trip)",
+  "tie_band": 0.005,
+  "rule": "If the best models are within 0.005 CV Top-1, the final choice among them is made after Phase 5 by CV Top-1 of classifier+HMM; the best by CV Top-1 is the provisional pick for Phase 4 HPO. Otherwise: highest CV Top-1, with CV log loss as tie-break within 0.001.",
+  "student_test_used_for_selection": false,
+  "logged_before_training": true,
+  "timestamp": "2026-11-18T12:29:36"
+}

@@ -1,0 +1,7 @@
+{
+  "model": "XGBoost, Round 1 config (scripts/train_models.py fit_boost)",
+  "xgb_device": "cuda",
+  "train_rows": "eligible & point_idx % 3 == 0",
+  "seed": 42,
+  "runtime_s": 42.93671917915344
+}

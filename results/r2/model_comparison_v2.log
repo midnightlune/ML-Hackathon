@@ -1,0 +1,71 @@
+models: ['LogisticRegression', 'RandomForest', 'LightGBM', 'XGBoost', 'MLP'] | n_jobs: 4 | features: 31
+  LogisticRegression fold 0: top1 0.8659 train-fold 0.9085 [3s]
+  LogisticRegression fold 1: top1 0.8938 train-fold 0.8998 [6s]
+  LogisticRegression fold 2: top1 0.9351 train-fold 0.8894 [11s]
+  LogisticRegression fold 3: top1 0.8636 train-fold 0.9030 [16s]
+  LogisticRegression fold 4: top1 0.9215 train-fold 0.8916 [19s]
+LogisticRegression: CV top1 0.8960±0.0322 train-fold 0.8985 ST 0.8756 cont 0.728 [23s]
+  RandomForest fold 0: top1 0.8742 train-fold 0.9381 [51s]
+  RandomForest fold 1: top1 0.9108 train-fold 0.9352 [99s]
+  RandomForest fold 2: top1 0.9540 train-fold 0.9280 [146s]
+  RandomForest fold 3: top1 0.8813 train-fold 0.9368 [193s]
+  RandomForest fold 4: top1 0.9256 train-fold 0.9329 [247s]
+RandomForest: CV top1 0.9092±0.0327 train-fold 0.9342 ST 0.8973 cont 0.767 [298s]
+C:\Users\Sarah\Downloads\ML\hack\.venv\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+  LightGBM fold 0: top1 0.8774 train-fold 0.9508 [7s]
+C:\Users\Sarah\Downloads\ML\hack\.venv\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+  LightGBM fold 1: top1 0.9142 train-fold 0.9417 [11s]
+C:\Users\Sarah\Downloads\ML\hack\.venv\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+  LightGBM fold 2: top1 0.9576 train-fold 0.9338 [15s]
+C:\Users\Sarah\Downloads\ML\hack\.venv\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+  LightGBM fold 3: top1 0.8855 train-fold 0.9481 [20s]
+C:\Users\Sarah\Downloads\ML\hack\.venv\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+  LightGBM fold 4: top1 0.9267 train-fold 0.9247 [23s]
+C:\Users\Sarah\Downloads\ML\hack\.venv\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+LightGBM: CV top1 0.9123±0.0324 train-fold 0.9398 ST 0.8981 cont 0.788 [27s]
+C:\Users\Sarah\Downloads\ML\hack\.venv\Lib\site-packages\xgboost\core.py:569: UserWarning: [12:35:33] WARNING: C:\actions-runner\_work\xgboost\xgboost\src\common\error_msg.cc:62: Falling back to prediction using DMatrix due to mismatched devices. This might lead to higher memory usage and slower performance. XGBoost is running on: cuda:0, while the input data is on: cpu.
+Potential solutions:
+- Use a data structure that matches the device ordinal in the booster.
+- Set the device for booster before call to inplace_predict.
+
+This warning will only be shown once.
+
+  return func(**kwargs)
+  XGBoost fold 0: top1 0.8757 train-fold 0.9492 [6s]
+  XGBoost fold 1: top1 0.9154 train-fold 0.9410 [9s]
+  XGBoost fold 2: top1 0.9573 train-fold 0.9334 [13s]
+  XGBoost fold 3: top1 0.8837 train-fold 0.9462 [16s]
+  XGBoost fold 4: top1 0.9266 train-fold 0.9249 [19s]
+XGBoost: CV top1 0.9117±0.0332 train-fold 0.9390 ST 0.8994 cont 0.787 [23s]
+  MLP fold 0: top1 0.8692 train-fold 0.9331 [31s]
+  MLP fold 1: top1 0.9065 train-fold 0.9328 [60s]
+  MLP fold 2: top1 0.9524 train-fold 0.9200 [93s]
+  MLP fold 3: top1 0.8815 train-fold 0.9390 [141s]
+  MLP fold 4: top1 0.9168 train-fold 0.9258 [178s]
+MLP: CV top1 0.9053±0.0325 train-fold 0.9301 ST 0.9059 cont 0.784 [209s]
+C:\Users\Sarah\Downloads\ML\hack\.venv\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+C:\Users\Sarah\Downloads\ML\hack\.venv\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+C:\Users\Sarah\Downloads\ML\hack\.venv\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+C:\Users\Sarah\Downloads\ML\hack\.venv\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+C:\Users\Sarah\Downloads\ML\hack\.venv\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+calibration {'model': 'LightGBM', 'cv_log_loss_raw': 0.058338870094493164, 'cv_log_loss_isotonic': 0.059472670995261843, 'brier_raw': 0.01599840194778669, 'brier_isotonic': 0.016147287170929284}
+calibration {'model': 'XGBoost', 'cv_log_loss_raw': 0.05777043476700783, 'cv_log_loss_isotonic': 0.059642497450113297, 'brier_raw': 0.01597769372165203, 'brier_isotonic': 0.016214091330766678}
+             Model  cv_top1  cv_top1_std  train_fold_top1  train_minus_cv_pts  cv_log_loss  st_top1  st_top1_all  st_macro_f1  st_log_loss  st_route_continuity  inference_ms_per_1k_points
+          LightGBM   0.9123       0.0324           0.9398              2.7535       0.0580   0.8981       0.7978       0.9411       0.0569               0.7884                     18.4019
+           XGBoost   0.9117       0.0332           0.9390              2.7234       0.0583   0.8994       0.7989       0.9413       0.0565               0.7874                      3.7078
+      RandomForest   0.9092       0.0327           0.9342              2.5028       0.0603   0.8973       0.7966       0.9342       0.0608               0.7669                     34.0053
+               MLP   0.9053       0.0325           0.9301              2.4858       0.0723   0.9059       0.8030       0.9388       0.0647               0.7837                      4.5448
+LogisticRegression   0.8960       0.0322           0.8985              0.2480       0.1573   0.8756       0.7761       0.8631       0.1494               0.7285                      2.5586
+{"status": "deferred_to_phase5", "contenders": ["LightGBM", "XGBoost", "RandomForest"], "provisional_for_hpo": "LightGBM"}
+total 640s

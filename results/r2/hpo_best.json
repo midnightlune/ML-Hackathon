@@ -1,0 +1,62 @@
+{
+  "model": "LightGBM",
+  "sampler": "TPE(seed=42)",
+  "pruner": "MedianPruner(n_startup_trials=3)",
+  "n_trials_requested": 10,
+  "timeout_s": 480,
+  "trials_complete": 5,
+  "trials_pruned": 5,
+  "cv": "GroupKFold(3) by trip, train only",
+  "objective": "mean CV Top-1 on eligible points",
+  "search_space": {
+    "learning_rate": [
+      "float_log",
+      0.01,
+      0.3
+    ],
+    "num_leaves": [
+      "int_log",
+      15,
+      255
+    ],
+    "min_child_samples": [
+      "int_log",
+      5,
+      200
+    ],
+    "subsample": [
+      "float",
+      0.5,
+      1.0
+    ],
+    "colsample_bytree": [
+      "float",
+      0.5,
+      1.0
+    ],
+    "reg_lambda": [
+      "float_log",
+      0.001,
+      10.0
+    ],
+    "reg_alpha": [
+      "float_log",
+      1e-08,
+      1.0
+    ]
+  },
+  "best_params": {
+    "learning_rate": 0.011240768803005551,
+    "num_leaves": 197,
+    "min_child_samples": 12,
+    "subsample": 0.831261142176991,
+    "colsample_bytree": 0.6558555380447055,
+    "reg_lambda": 0.12030178871154672,
+    "reg_alpha": 0.00023641892308789696,
+    "n_estimators": 1000
+  },
+  "best_cv_top1": 0.9151471835913584,
+  "hpo_compute_s": 252.40333676338196,
+  "model_used_for_hmm": "tuned",
+  "total_runtime_s": 397.5228199958801
+}

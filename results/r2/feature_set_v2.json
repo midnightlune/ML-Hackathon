@@ -1,0 +1,46 @@
+{
+  "kept_groups": [
+    "heading",
+    "temporal",
+    "graph"
+  ],
+  "dropped_groups": [
+    "smooth",
+    "along",
+    "relative"
+  ],
+  "features": [
+    "perp_dist",
+    "dist_rank",
+    "dist_minus_min",
+    "proj_fraction",
+    "arc_length",
+    "heading_cos",
+    "heading_abs",
+    "heading_reliable",
+    "speed",
+    "n_candidates",
+    "has_reverse_twin",
+    "prev_point_dist_to_cand",
+    "next_point_dist_to_cand",
+    "v2_hcos_2",
+    "v2_hcos_5",
+    "v2_hcos_10",
+    "v2_habs_2",
+    "v2_habs_5",
+    "v2_habs_10",
+    "v2_hvar_5",
+    "v2_win3_mean_dist",
+    "v2_win3_min_dist",
+    "v2_win3_frac_nearest",
+    "v2_win7_mean_dist",
+    "v2_win7_min_dist",
+    "v2_win7_frac_nearest",
+    "v2_conn_prev",
+    "v2_conn_next",
+    "v2_out_deg_end",
+    "v2_in_deg_start",
+    "v2_dead_end"
+  ],
+  "n_features": 31
+}

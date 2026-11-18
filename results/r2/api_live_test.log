@@ -1,0 +1,19 @@
+2026-11-18T13:05:55 INFO model loaded features=31 hmm=HMMParams(tau=1.3797030514084765, beta=22.8154837274139, v_max=75.03284180653964) in 1.1s
+2026-11-18T13:05:55 INFO eval_dir=C:\Users\Sarah\Downloads\ML\hack\data\raw\student_test layout=folder-per-trip trips=10
+2026-11-18T13:05:55 INFO serving on http://0.0.0.0:8000 (other laptop uses this machine's LAN IP)
+INFO:     Started server process [31656]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-11-18T13:05:56 INFO GET /health -> 200 9.2ms client=127.0.0.1
+INFO:     127.0.0.1:11328 - "GET /health HTTP/1.1" 200 OK
+2026-11-18T13:05:56 INFO GET /health -> 200 0.9ms client=127.0.0.1
+INFO:     127.0.0.1:11330 - "GET /health HTTP/1.1" 200 OK
+2026-11-18T13:05:57 INFO GET /trips -> 200 1.2ms client=127.0.0.1
+INFO:     127.0.0.1:11332 - "GET /trips HTTP/1.1" 200 OK
+2026-11-18T13:05:58 INFO predict trip_id=00000065 n_points=768 latency_ms=859 top1_hmm=0.8893 top1_clf=0.8698 route_f1=0.9399 breaks=0
+2026-11-18T13:05:58 INFO POST /predict -> 200 870.8ms client=127.0.0.1
+INFO:     127.0.0.1:11334 - "POST /predict HTTP/1.1" 200 OK
+2026-11-18T13:05:58 WARNING predict rejected unknown trip_id='nope'
+2026-11-18T13:05:58 INFO POST /predict -> 404 1.5ms client=127.0.0.1
+INFO:     127.0.0.1:11336 - "POST /predict HTTP/1.1" 404 Not Found

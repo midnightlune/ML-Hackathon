@@ -1,0 +1,14 @@
+feature,pct_missing,why
+perp_dist,0.0,never missing
+dist_rank,0.0,never missing
+dist_minus_min,0.0,never missing
+proj_fraction,0.0,never missing
+arc_length,0.0,never missing
+heading_cos,2.500519424072141,car stationary (window < 3 m) -> heading undefined
+heading_abs,2.500519424072141,car stationary (window < 3 m) -> heading undefined
+heading_reliable,0.0,never missing
+speed,0.010507889275504917,single-point segment (no neighbour)
+n_candidates,0.0,never missing
+has_reverse_twin,0.0,never missing
+prev_point_dist_to_cand,0.122990067656478,first point of a segment
+next_point_dist_to_cand,0.12543792822633995,last point of a segment

@@ -1,0 +1,40 @@
+{
+  "R50": {
+    "train": {
+      "miss_rate": 0.06898111841708392,
+      "missed": 13722,
+      "reliable_points": 198924
+    },
+    "student_test": {
+      "miss_rate": 0.014762070163251128,
+      "missed": 255,
+      "reliable_points": 17274
+    }
+  },
+  "R75": {
+    "train": {
+      "miss_rate": 0.06751322112967767,
+      "missed": 13430,
+      "reliable_points": 198924
+    },
+    "student_test": {
+      "miss_rate": 0.014588398749565822,
+      "missed": 252,
+      "reliable_points": 17274
+    }
+  },
+  "R_used": 75.0,
+  "K": 12,
+  "train": {
+    "rows": 1674932,
+    "points": 208417,
+    "reliable_rows": 1633358,
+    "positive_rate": 0.11356604002306904
+  },
+  "student_test": {
+    "rows": 172845,
+    "points": 19160,
+    "reliable_rows": 153044,
+    "positive_rate": 0.11122291628551266
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "rule": "keep group g iff CV_top1(all) - CV_top1(all minus g) >= 0.001 (headline scope: eligible points)",
+  "min_gain": 0.001,
+  "model": "XGBoost Round 1 config",
+  "train_points_per_fit": 36000,
+  "seed": 42,
+  "logged_before_results": true
+}

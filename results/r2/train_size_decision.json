@@ -1,0 +1,7 @@
+{
+  "shared_train_points_per_fit": 36000,
+  "approx_rows": 306008,
+  "sampled_by": "points (all candidate rows of a point), seed 42, from eligible rows of the training fold",
+  "evidence": "results/r2/train_size_benchmark.csv: at 36k points est. 5-fold CV MLP 218 s, RandomForest 147 s; KNN cost is dominated by prediction (~118 s per fold on all points) so KNN is scored on a fixed 20% point subsample and every model is also reported on that subsample",
+  "applies_to": "Phase 3 model comparison (all models same rows). Final selected model is refit on all eligible train rows (Phase 4)."
+}

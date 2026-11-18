@@ -1,0 +1,53 @@
+C:\Users\Sarah\Downloads\ML\hack\.venv\Lib\site-packages\xgboost\core.py:569: UserWarning: [12:14:05] WARNING: C:\actions-runner\_work\xgboost\xgboost\src\common\error_msg.cc:62: Falling back to prediction using DMatrix due to mismatched devices. This might lead to higher memory usage and slower performance. XGBoost is running on: cuda:0, while the input data is on: cpu.
+Potential solutions:
+- Use a data structure that matches the device ordinal in the booster.
+- Set the device for booster before call to inplace_predict.
+
+This warning will only be shown once.
+
+  return func(**kwargs)
+original_13            CV top1 0.8810 (all pts 0.7793, train-fold 0.8986) [31s]
++smooth                CV top1 0.8939 (all pts 0.7903, train-fold 0.9137) [59s]
++heading               CV top1 0.9089 (all pts 0.8034, train-fold 0.9301) [87s]
++temporal              CV top1 0.8890 (all pts 0.7870, train-fold 0.9123) [119s]
++along                 CV top1 0.8804 (all pts 0.7790, train-fold 0.8987) [148s]
++graph                 CV top1 0.8833 (all pts 0.7805, train-fold 0.9021) [176s]
++relative              CV top1 0.8825 (all pts 0.7810, train-fold 0.8996) [205s]
+all                    CV top1 0.9141 (all pts 0.8086, train-fold 0.9462) [235s]
+all_minus_smooth       CV top1 0.9138 (all pts 0.8081, train-fold 0.9432) [262s]
+all_minus_heading      CV top1 0.9002 (all pts 0.7966, train-fold 0.9282) [285s]
+all_minus_temporal     CV top1 0.9117 (all pts 0.8048, train-fold 0.9373) [309s]
+all_minus_along        CV top1 0.9140 (all pts 0.8078, train-fold 0.9438) [339s]
+all_minus_graph        CV top1 0.9126 (all pts 0.8074, train-fold 0.9412) [367s]
+all_minus_relative     CV top1 0.9144 (all pts 0.8089, train-fold 0.9449) [402s]
+            config  cv_top1  cv_top1_std  cv_top1_all_points  train_fold_top1  n_features  gain_vs_original  loo_drop  train_minus_cv_pts
+       original_13   0.8810       0.0310              0.7793           0.8986          13            0.0000       NaN              1.7646
+           +smooth   0.8939       0.0291              0.7903           0.9137          17            0.0129       NaN              1.9827
+          +heading   0.9089       0.0282              0.8034           0.9301          20            0.0279       NaN              2.1224
+         +temporal   0.8890       0.0310              0.7870           0.9123          19            0.0080       NaN              2.3230
+            +along   0.8804       0.0310              0.7790           0.8987          16           -0.0006       NaN              1.8318
+            +graph   0.8833       0.0310              0.7805           0.9021          18            0.0023       NaN              1.8810
+         +relative   0.8825       0.0305              0.7810           0.8996          18            0.0015       NaN              1.7101
+               all   0.9141       0.0289              0.8086           0.9462          43            0.0331       NaN              3.2147
+  all_minus_smooth   0.9138       0.0285              0.8081           0.9432          39            0.0328    0.0002              2.9351
+ all_minus_heading   0.9002       0.0284              0.7966           0.9282          36            0.0192    0.0139              2.8058
+all_minus_temporal   0.9117       0.0285              0.8048           0.9373          37            0.0307    0.0024              2.5653
+   all_minus_along   0.9140       0.0295              0.8078           0.9438          40            0.0330    0.0001              2.9857
+   all_minus_graph   0.9126       0.0290              0.8074           0.9412          38            0.0316    0.0014              2.8536
+all_minus_relative   0.9144       0.0292              0.8089           0.9449          38            0.0334   -0.0004              3.0426
+        final_kept   0.9131       0.0297              0.8069           0.9409          31            0.0321       NaN              2.7809
+kept: ['heading', 'temporal', 'graph']
+             feature     gain  mean_abs_shap  gain_share  shap_share
+      dist_minus_min 504.1105         2.2080      0.2900      0.2897
+       proj_fraction  31.8722         0.6459      0.0183      0.0847
+          v2_habs_10 361.3427         0.5546      0.2079      0.0728
+          v2_hcos_10  87.4553         0.4472      0.0503      0.0587
+           dist_rank 422.3253         0.4373      0.2430      0.0574
+   v2_win3_mean_dist  30.7315         0.3938      0.0177      0.0517
+           v2_hvar_5  15.5024         0.2990      0.0089      0.0392
+           v2_hcos_5  23.9917         0.2829      0.0138      0.0371
+   v2_win7_mean_dist   8.3745         0.2541      0.0048      0.0333
+           v2_habs_5  40.6239         0.2142      0.0234      0.0281
+v2_win7_frac_nearest  11.9956         0.2060      0.0069      0.0270
+         heading_cos   6.1451         0.1755      0.0035      0.0230
+done in 443s

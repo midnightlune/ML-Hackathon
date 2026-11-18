@@ -1,0 +1,2 @@
+Model,Algorithm Family,Key Configuration,cv_top1,st_top1,st_top1_sub20
+Baseline: nearest arc (not a model),Heuristic,argmin perp_dist,0.5114666907964851,0.49334259580872986,0.4855240301100174

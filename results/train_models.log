@@ -1,0 +1,74 @@
+10:34:32 INFO XGBoost CUDA init OK (RTX 3050)
+10:34:33 INFO train: 1633358 reliable rows / 198924 points; student_test: 153044 rows / 17274 points
+10:34:35 INFO baseline nearest-arc top1: cv 0.5115  student_test 0.4933
+10:34:35 INFO === LogisticRegression ===
+10:34:38 INFO   fold 0: top1 0.8447 (3s)
+10:34:40 INFO   fold 1: top1 0.8992 (5s)
+10:34:43 INFO   fold 2: top1 0.8967 (8s)
+10:34:45 INFO   fold 3: top1 0.6517 (10s)
+10:34:48 INFO   fold 4: top1 0.7694 (12s)
+10:34:50 INFO   LogisticRegression: CV top1 0.8123±0.1041  CV F1 0.8168  ST top1 0.8306  (15s total)
+10:34:50 INFO === KNN ===
+10:35:20 INFO   fold 0: top1 0.8478 (29s)
+10:35:35 INFO   fold 1: top1 0.8986 (45s)
+10:35:55 INFO   fold 2: top1 0.8927 (64s)
+10:36:11 INFO   fold 3: top1 0.6416 (81s)
+10:36:29 INFO   fold 4: top1 0.7584 (98s)
+10:36:47 INFO   KNN: CV top1 0.8078±0.1085  CV F1 0.9099  ST top1 0.8324  (116s total)
+10:36:47 INFO === RandomForest ===
+10:37:10 INFO   fold 0: top1 0.8511 (23s)
+10:37:41 INFO   fold 1: top1 0.9137 (55s)
+10:38:18 INFO   fold 2: top1 0.9042 (92s)
+10:38:36 INFO   fold 3: top1 0.6615 (110s)
+10:39:05 INFO   fold 4: top1 0.7717 (138s)
+10:39:37 INFO   RandomForest: CV top1 0.8204±0.1052  CV F1 0.9221  ST top1 0.8581  (171s total)
+10:39:37 INFO === LightGBM ===
+C:\Users\Sarah\Downloads\ML\hack\.venv\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+10:39:41 INFO   fold 0: top1 0.8600 (4s)
+C:\Users\Sarah\Downloads\ML\hack\.venv\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+10:39:45 INFO   fold 1: top1 0.9162 (7s)
+C:\Users\Sarah\Downloads\ML\hack\.venv\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+10:39:52 INFO   fold 2: top1 0.9069 (15s)
+C:\Users\Sarah\Downloads\ML\hack\.venv\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+10:39:55 INFO   fold 3: top1 0.6625 (18s)
+C:\Users\Sarah\Downloads\ML\hack\.venv\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+10:39:58 INFO   fold 4: top1 0.7726 (21s)
+C:\Users\Sarah\Downloads\ML\hack\.venv\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+10:40:06 INFO   LightGBM: CV top1 0.8237±0.1065  CV F1 0.9251  ST top1 0.8601  (29s total)
+10:40:06 INFO === MLP ===
+10:40:55 INFO   fold 0: top1 0.8462 (49s)
+10:41:11 INFO   fold 1: top1 0.9082 (65s)
+10:41:38 INFO   fold 2: top1 0.8973 (92s)
+10:42:49 INFO   fold 3: top1 0.6583 (163s)
+10:43:37 INFO   fold 4: top1 0.7710 (211s)
+10:43:50 INFO   MLP: CV top1 0.8162±0.1036  CV F1 0.9162  ST top1 0.8466  (225s total)
+10:43:50 INFO === XGBoost ===
+C:\Users\Sarah\Downloads\ML\hack\.venv\Lib\site-packages\xgboost\core.py:569: UserWarning: [10:43:53] WARNING: C:\actions-runner\_work\xgboost\xgboost\src\common\error_msg.cc:62: Falling back to prediction using DMatrix due to mismatched devices. This might lead to higher memory usage and slower performance. XGBoost is running on: cuda:0, while the input data is on: cpu.
+Potential solutions:
+- Use a data structure that matches the device ordinal in the booster.
+- Set the device for booster before call to inplace_predict.
+
+This warning will only be shown once.
+
+  return func(**kwargs)
+10:43:53 INFO   fold 0: top1 0.8575 (3s)
+10:43:55 INFO   fold 1: top1 0.9167 (5s)
+10:43:58 INFO   fold 2: top1 0.9075 (8s)
+10:44:00 INFO   fold 3: top1 0.6631 (10s)
+10:44:02 INFO   fold 4: top1 0.7716 (12s)
+10:44:05 INFO   XGBoost: CV top1 0.8233±0.1064  CV F1 0.9258  ST top1 0.8597  (15s total)
+             Model  CV Macro F1-score  CV Top-1 Accuracy  CV Top-1 std  CV Log Loss  Top-1 Accuracy  Student-Test Macro F1-score  Log Loss  Inference Time (ms / 1k points)  Train time (s)  CV time (s)  Selected
+LogisticRegression             0.8168             0.8123        0.1041       0.2165          0.8306                       0.8318    0.1968                              2.0             2.5         12.0     False
+               KNN             0.9099             0.8078        0.1085       0.1383          0.8324                       0.9100    0.1300                           2008.6             0.6         98.0     False
+      RandomForest             0.9221             0.8204        0.1052       0.0865          0.8581                       0.9194    0.0814                             17.6            31.9        138.0     False
+          LightGBM             0.9251             0.8237        0.1065       0.0812          0.8601                       0.9221    0.0783                             36.7             7.1         21.0     False
+               MLP             0.9162             0.8162        0.1036       0.0970          0.8466                       0.9121    0.0871                              3.1            12.9        211.0     False
+           XGBoost             0.9258             0.8233        0.1064       0.0793          0.8597                       0.9215    0.0777                              2.4             2.8         12.0      True
+baseline nearest arc: CV top1 0.5115, student_test top1 0.4933
+SELECTED: XGBoost; total 574s

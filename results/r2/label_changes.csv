@@ -1,0 +1,3 @@
+partition,trips,points,low_quality_trips,low_quality_trip_ids,points_in_low_quality_trips,unreliable_r1_148m,unreliable_r2_50m,newly_unreliable,unreliable_in_ok_trips,train_eligible_points,pct_points_train_eligible
+train,80,208417,2,00000033 00000054,25157,9493,23268,13775,2545,180715,86.70837791542917
+student_test,10,19160,1,00000056,3958,1886,2105,219,0,15202,79.34237995824634
