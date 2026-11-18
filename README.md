@@ -18,7 +18,7 @@ You need **Python 3.12** and **git**. The commands below are for PowerShell.
 
 ```powershell
 git clone https://github.com/NullPointerX-ui/M.L-Hackathon.git
-cd M.L-Hackathon
+cd ML-Hackathon
 ```
 
 ### 2. Create the virtual environment and install packages
